@@ -1,4 +1,5 @@
  Objetivo do Trabalho
+ 
 Este projeto foi desenvolvido como atividade prática da disciplina de Programação Web, com o objetivo principal de implementar um sistema completo de CRUD (Create, Read, Update, Delete) para gerenciamento de produtos, aplicando os conceitos fundamentais de desenvolvimento front-end.
 Competências Desenvolvidas:
 Manipulação do DOM com JavaScript
