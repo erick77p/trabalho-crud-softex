@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Produtos</title>
+    <link rel="stylesheet" href="adicionar.css">
+      <link rel="shortcut icon" href="/img/erick.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <h1>Gerenciador de Produtos</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                   <li><a href="/index.html" class="menu-link ativo">Início</a></li>
+                    <li><a href="/login/index.html" class="menu-link">Login</a></li>
+                    
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo-principal">
+        <div class="container">
+            <h2 class="titulo-secao">Gerenciar Produtos</h2>
+            
+            <!-- Mensagens -->
+            <div id="mensagem-sucesso" class="mensagem mensagem-sucesso"></div>
+            <div id="mensagem-erro" class="mensagem mensagem-erro"></div>
+            
+            <!-- Controles -->
+            <div class="controles-produtos">
+                <div class="busca-produtos">
+                    <input type="text" id="campo-busca" class="campo-busca" placeholder="Buscar produtos...">
+                </div>
+                <button id="botao-adicionar" class="botao-adicionar">Adicionar Produto</button>
+            </div>
+            
+            <!-- Tabela de Produtos -->
+            <table class="tabela-produtos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Categoria</th>
+                        <th>Origem</th>
+                        <th>Lote</th>
+                        <th>Validade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-produtos">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Modal de Edição/Adição -->
+    <div id="modal-produto" class="modal">
+        <div class="modal-conteudo">
+            <div class="modal-cabecalho">
+                <h3 class="modal-titulo" id="modal-titulo">Editar Produto</h3>
+                <button class="modal-fechar" id="modal-fechar">&times;</button>
+            </div>
+            <form id="formulario-produto" class="formulario-produto">
+                <input type="hidden" id="produto-id">
+                
+                <div class="grupo-formulario">
+                    <label for="produto-nome">Nome</label>
+                    <input type="text" id="produto-nome" required>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="produto-preco">Preço (R$)</label>
+                    <input type="number" id="produto-preco" step="0.01" min="0" required>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="produto-categoria">Categoria</label>
+                    <select id="produto-categoria" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="Alimentício">Alimentício</option>
+                        <option value="Eletrônico">Eletrônico</option>
+                        <option value="Vestuário">Vestuário</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Beleza">Beleza</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="produto-origem">Origem</label>
+                    <input type="text" id="produto-origem" required>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="produto-lote">Lote</label>
+                    <input type="text" id="produto-lote" required>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="produto-validade">Data de Validade</label>
+                    <input type="date" id="produto-validade" required>
+                </div>
+                
+                <div class="botoes-formulario">
+                    <button type="button" class="botao-cancelar" id="botao-cancelar">Cancelar</button>
+                    <button type="submit" class="botao-salvar">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+              <p>&copy; 2025 ErickOnline - Sistema CRUD de Produtos dos Ratos</p>
+        </div>
+    </footer>
+
+    <script src="adicionar.js"></script>
+</body>
+</html>

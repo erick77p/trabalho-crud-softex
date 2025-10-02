@@ -1,0 +1,337 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #3498db;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu-link.ativo,
+.menu-link:hover {
+    background-color: #34495e;
+}
+
+.acoes-usuario .botao-secundario {
+    background-color: transparent;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.acoes-usuario .botao-secundario:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Banner Principal */
+.banner-principal {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 60px 0;
+}
+
+.banner-principal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.conteudo-banner {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+.titulo-banner {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.texto-banner {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.botoes-banner {
+    display: flex;
+    gap: 15px;
+}
+
+.botao-primario, .botao-secundario {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.botao-primario {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.botao-primario:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.botao-secundario:hover {
+    background-color: white;
+    color: #2c3e50;
+}
+
+.imagem-banner {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.imagem-banner img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Produtos em Destaque */
+.produtos-destaque {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.cartao-produto {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.cartao-produto:hover {
+    transform: translateY(-5px);
+}
+
+.imagem-produto {
+    height: 180px;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imagem-produto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-produto {
+    padding: 15px;
+}
+
+.info-produto h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.preco-produto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.categoria-produto {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+/* Funcionalidades */
+.funcionalidades {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.grade-funcionalidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.cartao-funcionalidade {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.cartao-funcionalidade:hover {
+    transform: translateY(-5px);
+}
+
+.icone-funcionalidade {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f1;
+}
+
+.icone-funcionalidade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cartao-funcionalidade h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cabecalho .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .banner-principal .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .conteudo-banner {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .botoes-banner {
+        justify-content: center;
+    }
+    
+    .grade-produtos, .grade-funcionalidades {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-banner {
+        font-size: 2rem;
+    }
+    
+    .botoes-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .botao-primario, .botao-secundario {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .grade-produtos, .grade-funcionalidades {
+        grid-template-columns: 1fr;
+    }
+}
