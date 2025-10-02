@@ -45,5 +45,3 @@ https://youtu.be/DcN49TD7it0?si=qjb5j7-siAbR70dZ
 Considerações Finais
 Este projeto representou uma oportunidade valiosa para aplicar na prática os conceitos teóricos estudados em sala de aula. A implementação do sistema CRUD completo permitiu compreender as interações entre as diferentes tecnologias web e desenvolver habilidades essenciais para um desenvolvedor front-end.
 
-Agradeço a oportunidade de demonstrar o conhecimento adquirido através deste trabalho prático.
-
